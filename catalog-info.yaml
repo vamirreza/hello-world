@@ -7,5 +7,5 @@ metadata:
     github.com/project-slug: vamirreza/hello-world
 spec:
   type: website
+  owner: john@example.com
   lifecycle: experimental
-

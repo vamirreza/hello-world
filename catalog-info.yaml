@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: scania-backstage
+  description: An example of a Backstage application.
+  annotations:
+    github.com/project-slug: vamirreza/docker-hello
+spec:
+  type: website
+  owner: john@example.com
+  lifecycle: experimental
+

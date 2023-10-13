@@ -12,6 +12,7 @@ This is a sample template for docker-hello - Below is a brief explanation of wha
 └── template.yaml                  <-- AWS Template
 └── samconfig.toml                 <-- SAM lambda Template
 └── .github/workflow/pipeline.yaml <-- Github Action pipeline for deploy on AWS Lambda
+└── catalog-info.yaml              <-- backstage catalog to register component on backstage
 ```
 
 ## Requirements
@@ -81,6 +82,10 @@ The command will package and deploy your application to AWS, with a series of pr
 
 ### Github Action
 
-we use github action to deploy lambda app an AWS. we have to env (test and prod) and resources will be deployed by pipeline via `sam`.
+we use github action to deploy lambda app on AWS. we have two env (test and prod) and resources will be deployed by pipeline via `sam`.
 You can find your API Gateway Endpoint URL in the output values displayed after deployment.
 
+
+### Backstage
+
+after setup backstage on localhost hello-world catalog hase beed register by backstage config file also CI/CD will be accessible via backstage
